@@ -1,0 +1,27 @@
+{
+  "name": "invoiceConverter",
+  "description": "Creates Formatted PDF Invoice Slip for EpiCypher",
+  "version": "2.0.1",
+  "main": "main.js",
+  "author": "Matthew and Jonathan Bakley",
+  "license": "MIT",
+  "scripts": {
+    "start": "NODE_ENV=development && electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder -mwl"
+  },
+  "build": {
+    "appId": "com.electron.invoiceconverter",
+    "mac": {
+      "category": "your.app.category.type"
+    }
+  },
+  "postinstall": "electron-builder install-app-deps",
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "^10.1.5",
+    "electron-builder": "^22.9.1",
+    "electron-reload": "^1.5.0",
+    "electron-reloader": "^1.0.1"
+  }
+}
